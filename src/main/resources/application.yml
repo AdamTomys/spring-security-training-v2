@@ -6,6 +6,9 @@ spring:
     driver-class-name: org.postgresql.Driver
   jpa:
     hibernate:
+#     ddl-auto determines what hibernate is doing with db.
+#     create - each time app starts, db is created from scratch and all data is deleted
+#     update - each time app starts, db is being updated if necessary
       ddl-auto: create
     show-sql: true
     properties:
